@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>LIFESTYLE!</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: #25252a;
+            font-family: 'Ubuntu', sans-serif;
+            width: 100%;
+            min-height: 100vh;
+            color: #fff;
+            overflow-y: overlay;
+        }
+        
+        ::-webkit-scrollbar{
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track{
+            background-color: transparent;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: #999;
+            border-radius: 100px;
+        }
+        nav div.bar.active .open{
+            display: none;
+        }
+        nav div.bar .close{
+            display: none;
+        }
+        nav div.bar.active .close{
+            display: initial;
+        }
+        
+        nav ul li{
+            list-style: none;
+            margin: 0 15px;
+            padding: 0 10px;
+            border-left: 1px solid #fff0;
+            border-right: 1px solid #fff0;
+            transition: 0.3s;
+        }
+        nav ul li:hover{
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color:darkturquoise;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+            border: none;
+    background: #252525;
+    padding: 14px 18px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: background 1s ease;
+          }
+          
+          #myBtn:hover {
+            background-color: #555;
+          }
+.btn btn-primary{
+    display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color:darkturquoise;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+            border: none;
+    background: #252525;
+    padding: 14px 18px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: background 1s ease;
+}
+.btn btn-primary:hover{
+    background-color: #555;
+
+}
+  
+    </style>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="  padding: 3px 10px 1px;">Sroll to Up&#8593;</button>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">AP</a></li>
+                  <li><a class="dropdown-item" href="#">Telangana</a></li>
+                  <li><a class="dropdown-item" href="#">National</a></li>
+                  <li><a class="dropdown-item" href="#">Entertainment</a></li>
+                  <li><a class="dropdown-item" href="#">Lifestyle</a></li>
+                </ul>
+                <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="Lifestyle.html">LIFESTYLE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<div style="margin-top: 10px;">
+    <button type="button" class="btn btn-danger">LIFESTYLE</button><hr>
+</div>
+<div class="card" style="margin-top:0px;">
+    <div class="card-body" style="color: #16161d;">
+        <a href="https://indianexpress.com/"><p style="text-decoration: underline;color:blue;margin-left:0px;">Nutrition alert: Dates (100 grams) contain…</p></a>
+       
+           <img src="https://images.indianexpress.com/2023/06/Dates-health-benefits.jpg?w=640" alt="" height="400px" width="400px" style="margin-top:0px;">
+           <p>Dates are often recommended to pregnant women due to their high fiber content which can aid in digestion, as well as potassium that help maintain electrolyte balance. Some studies suggest that consuming dates in the final weeks of pregnancy might help facilitate labour," said Ushakiran Sisodia, Registered Dietician and Clinical Nutritionist Diet and Nutrition, Nanavati Max Super Speciality Hospital.</p> 
+            
+    </div>
+  </div>
+  <div class="card" style="margin-top: 10px;">
+    <div class="card-body" style="color: #16161d;">
+     <a href="https://www.hindustantimes.com/"><p style="text-decoration: underline;color:blue;">Diabetes: 5 things you should do to manage post-lunch sugar spikes</p></a>
+     <img src="https://www.hindustantimes.com/ht-img/img/2023/06/26/550x309/diabetes_1686721849407_1687778341781.jpg" alt="" height="300px" width="400px">
+     <p>Keeping blood sugar spikes in check is an integral part of diabetes management. High blood sugar levels over a long period of time can lead to many diabetes complications. </p>
+    </div>
+  </div>
+  </div>
+  <div class="card" style="margin-top: 10px;">
+    <div class="card-body" style="color: #16161d;">
+        <a href="https://www.hindustantimes.com/"><p style="text-decoration: underline;color:blue;">Supporting loved ones with PTSD: 5 practical tips for families and friends</p></a>
+        <img src="https://www.hindustantimes.com/ht-img/img/2023/06/25/550x309/courtney-cook-DWaiEFt9VT4-unsplash_1687687832836_1687687849130.jpg" alt="">
+        <p>Human life is full of experiences. Adverse situations can have a long-lasting impact on an individual's functionality and response patterns. Events that are traumatic can happen once or can happen in series or on multiple occasions in one’s life.</p>
+    </div></div>
+
+    <div class="card" style="margin-top: 10px;">
+        <div class="card-body" style="color: #16161d;">
+            <a href="https://www.outlookindia.com/"><p style="text-decoration: underline;color:blue;">International Yoga Day: 5 Successful Celebrities Who Have Achieved A Healthy Lifestyle</p></a>
+            <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1687345916.webp" alt="">
+            <p>As we celebrate International Yoga Day, it's the perfect time to highlight the incredible transformations and healthy lifestyle choices made by some of our favourite celebrities. While there are many celebs who prefer to work out in the gym or do Pilates or go out for a run, but there are many others who also manage to find time out from their busy schedules for doing yoga.
+
+            </p>
+        </div></div>
+        <div class="card" style="margin-top: 10px;">
+            <div class="card-body" style="color: #16161d;">
+                <a href="https://indianexpress.com/"><p style="text-decoration: underline;color:blue;">Myth or fact: Are multivitamins not needed at all?</p></a>
+                <img src="https://images.indianexpress.com/2023/06/multivitamins_200_pexelsss.jpg?w=640" alt="">
+                <p>Many of us have been advised to take multivitamins to meet several nutritional requirements. But have you ever wondered if it is the way to go? Dr Cyriac Abby Philips, popular as The Liver Doc on Twitter, recently claimed on the platform that there “is no point of taking a multivitamin. In fact, there is no point in a multivitamin at all.</p>
+            </div></div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="./index.js">
+
+    
+        // add class navbarDark on navbar scroll
+    const header = document.querySelector('.navbar');
+    
+    window.onscroll = function() {
+    var top = window.scrollY;
+    if(top >=100) {
+        header.classList.add('navbarDark');
+    }
+    else {
+        header.classList.remove('navbarDark');
+    }
+    }
+    </script>
+    <script>
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+    }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    
+    </script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+ 
+</html>

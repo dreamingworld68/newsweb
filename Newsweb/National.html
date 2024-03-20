@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>NATIONAL!</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: #25252a;
+            font-family: 'Ubuntu', sans-serif;
+            width: 100%;
+            min-height: 100vh;
+            color: #fff;
+            overflow-y: overlay;
+        }
+        
+        ::-webkit-scrollbar{
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track{
+            background-color: transparent;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: #999;
+            border-radius: 100px;
+        }
+        nav div.bar.active .open{
+            display: none;
+        }
+        nav div.bar .close{
+            display: none;
+        }
+        nav div.bar.active .close{
+            display: initial;
+        }
+        
+        nav ul li{
+            list-style: none;
+            margin: 0 15px;
+            padding: 0 10px;
+            border-left: 1px solid #fff0;
+            border-right: 1px solid #fff0;
+            transition: 0.3s;
+        }
+        nav ul li:hover{
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color:darkturquoise;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+            border: none;
+    background: #252525;
+    padding: 14px 18px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: background 1s ease;
+          }
+          
+          #myBtn:hover {
+            background-color: #555;
+          }
+.btn btn-primary{
+    display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color:darkturquoise;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+            border: none;
+    background: #252525;
+    padding: 14px 18px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: background 1s ease;
+}
+.btn btn-primary:hover{
+    background-color: #555;
+
+}
+  
+    </style>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="  padding: 3px 10px 1px;">Sroll to Up&#8593;</button>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">AP</a></li>
+                  <li><a class="dropdown-item" href="#">Telangana</a></li>
+                  <li><a class="dropdown-item" href="#">National</a></li>
+                  <li><a class="dropdown-item" href="#">Entertainment</a></li>
+                  <li><a class="dropdown-item" href="#">Lifestyle</a></li>
+                </ul>
+                <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="National.html">NATIONAL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<div style="margin-top: 10px;">
+    <button type="button" class="btn btn-danger">NATIONAL</button><hr>
+</div>
+<div class="card" style="margin-top:0px;">
+    <div class="card-body" style="color: #16161d;">
+        <a href="https://www.hindustantimes.com/"><p style="text-decoration: underline;color:blue;margin-left:0px;">Centre may tweak pension policy to give assured benefit</p></a>
+       
+           <img src="https://www.hindustantimes.com/ht-img/img/2023/06/25/550x309/epfo_deadline_1677478691135_1687728569232.jpg" alt="" height="400px" width="400px" style="margin-top:0px;">
+           <p>The move will require some changes to the current market-linked pension plan launched in 2004 and comes amid a switch by several opposition-ruled states to an old pension scheme.</p> 
+            
+    </div>
+  </div>
+  <div class="card" style="margin-top: 10px;">
+    <div class="card-body" style="color: #16161d;">
+     <a href="https://www.hindustantimes.com/"><p style="text-decoration: underline;color:blue;">Watch - Air hostess stuns her 'crush' MS Dhoni with chocolates and special note at 30,000 feet: 'Couldn't stop blushing'</p></a>
+     <img src="https://www.hindustantimes.com/ht-img/img/2023/06/26/550x309/dhoni-chocolates_1687753063213_1687753072682.jpg" alt="" height="300px" width="400px">
+     <p>Seated by the window, MS Dhoni was in a relaxed state when the air hostess approached with a tray of chocolates, the video of which has since gone viral.</p>
+    </div>
+  </div>
+  </div>
+  <div class="card" style="margin-top: 10px;">
+    <div class="card-body" style="color: #16161d;">
+        <a href="https://www.businesstoday.in/"><p style="text-decoration: underline;color:blue;">Delhi weather today: Rainfall hits parts of national capital, IMD predicts pleasant weather for next few days</p></a>
+        <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202306/36dfdfa1abbd0938fbd08a32d233fddf_1-sixteen_nine.jpg?size=948:533" alt="">
+        <p>Domestic stock indices on Friday declined for the second straight session amid weak global cues. The BSE Sensex dropped 259.52 points, or 0.41 per cent, to settle at 62,979.37. The NSE Nifty slipped 105.75 points, or 0.56 per cent, to 18,665.50.</p>
+    </div></div>
+
+    <div class="card" style="margin-top: 10px;">
+        <div class="card-body" style="color: #16161d;">
+            <a href="https://www.hindustantimes.com/"><p style="text-decoration: underline;color:blue;">Delhi weather today: Rainfall hits parts of national capital, IMD predicts pleasant weather for next few days </p></a>
+            <img src="https://cdn.zeebiz.com/sites/default/files/2023/06/22/248077-delhi-weather-today-forecast.jpg?im=FitAndFill=(1200,900)" alt="">
+            <p>Delhi weather today: As rainfall hit parts of the national capital on Thursday, the pleasant weather is likely to remain until mid-next week. Bringing respite to Delhiites from the scorching heat, the temperature has also dropped by a few notches.
+
+            </p>
+        </div></div>
+        <div class="card" style="margin-top: 10px;">
+            <div class="card-body" style="color: #16161d;">
+                <a href="https://timesofindia.indiatimes.com/"><p style="text-decoration: underline;color:blue;">Latest Updates: Landslides hit Himachal Pradesh, national highway closed; 2 dead </p></a>
+                <img src="https://static.toiimg.com/thumb/imgsize-24070,msid-101249455,width-400,resizemode-4/101249455.jpg" alt="">
+                <p>Landslides have occurred at many places between Charmile to Satmile on Pandoh-Mandi national highway in Himachal Pradesh. "National Highway is closed, and it will take time to open", said Mandi police. Two people lost their lives and widespread devastation occurred as flash floods ravaged the districts of Solan and Hamirpur, triggered by a cloudburst.</p>
+            </div></div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="./index.js">
+
+    
+        // add class navbarDark on navbar scroll
+    const header = document.querySelector('.navbar');
+    
+    window.onscroll = function() {
+    var top = window.scrollY;
+    if(top >=100) {
+        header.classList.add('navbarDark');
+    }
+    else {
+        header.classList.remove('navbarDark');
+    }
+    }
+    </script>
+    <script>
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+    }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    
+    </script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+ 
+</html>

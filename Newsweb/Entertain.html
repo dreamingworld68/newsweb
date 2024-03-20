@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>ENTERTAINMENT!</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: #25252a;
+            font-family: 'Ubuntu', sans-serif;
+            width: 100%;
+            min-height: 100vh;
+            color: #fff;
+            overflow-y: overlay;
+        }
+        
+        ::-webkit-scrollbar{
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track{
+            background-color: transparent;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: #999;
+            border-radius: 100px;
+        }
+        nav div.bar.active .open{
+            display: none;
+        }
+        nav div.bar .close{
+            display: none;
+        }
+        nav div.bar.active .close{
+            display: initial;
+        }
+        
+        nav ul li{
+            list-style: none;
+            margin: 0 15px;
+            padding: 0 10px;
+            border-left: 1px solid #fff0;
+            border-right: 1px solid #fff0;
+            transition: 0.3s;
+        }
+        nav ul li:hover{
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color:darkturquoise;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+            border: none;
+    background: #252525;
+    padding: 14px 18px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: background 1s ease;
+          }
+          
+          #myBtn:hover {
+            background-color: #555;
+          }
+.btn btn-primary{
+    display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color:darkturquoise;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+            border: none;
+    background: #252525;
+    padding: 14px 18px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: background 1s ease;
+}
+.btn btn-primary:hover{
+    background-color: #555;
+
+}
+  
+    </style>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="  padding: 3px 10px 1px;">Sroll to Up&#8593;</button>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">AP</a></li>
+                  <li><a class="dropdown-item" href="#">Telangana</a></li>
+                  <li><a class="dropdown-item" href="#">National</a></li>
+                  <li><a class="dropdown-item" href="#">Entertainment</a></li>
+                  <li><a class="dropdown-item" href="#">Lifestyle</a></li>
+                </ul>
+                <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="Entertain.html">ENTERTAINMENT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<div style="margin-top: 10px;">
+    <button type="button" class="btn btn-danger">ENTERTAINMENT</button><hr>
+</div>
+<div class="card" style="margin-top:0px;">
+    <div class="card-body" style="color: #16161d;">
+        <a href="https://indianexpress.com/"><p style="text-decoration: underline;color:blue;margin-left:0px;">AR Rahman explains the ‘spiritual’ reason behind his decision to get married: ‘It was exciting and terrifying both’</p></a>
+       
+           <img src="https://images.indianexpress.com/2023/06/ar-rahman-2.jpg?w=640" alt="" height="400px" width="400px" style="margin-top:0px;">
+           <p>Legendary musician AR Rahman got married to Saira Banu when his career as a composer had just taken off. In an interview, the musician revealed his intention behind getting married and explained how there were several cultural challenges that he saw after getting married. Rahman revealed that his greatest challenge was avoiding taking sides between his mother, wife and children.</p> 
+            
+    </div>
+  </div>
+  <div class="card" style="margin-top: 10px;">
+    <div class="card-body" style="color: #16161d;">
+     <a href="https://www.devdiscourse.com/"><p style="text-decoration: underline;color:blue;">Entertainment News Roundup: Hollywood directors ratify labor pact as writers keep picketing; Elton John enthralls Glastonbury in final UK show and more</p></a>
+     <img src="https://www.devdiscourse.com/remote.axd?https://devdiscourse.blob.core.windows.net/devnews/17_05_2019_19_21_46_3273949.jpg?width=920&format=webp" alt="" height="300px" width="400px">
+     <p>The Directors Guild of America (DGA) said 87% of those voting supported the deal with the Alliance of Motion Picture and Television Producers (AMPTP), a group that represents Walt Disney Co, Netflix Inc and other major studios. At Glastonbury, a giant spider powered by renewable energy A giant spider breathes fire into the cloudy night sky over Glastonbury's Arcadia stage as thumping beats from electronic music duo the Chemical Brothers excite hundreds of fans.</p>
+    </div>
+  </div>
+  </div>
+  <div class="card" style="margin-top: 10px;">
+    <div class="card-body" style="color: #16161d;">
+        <a href="https://indianexpress.com/"><p style="text-decoration: underline;color:blue;">‘Spies are the new superheroes’: Jack Ryan star John Krasinski</p></a>
+        <img src="https://images.indianexpress.com/2023/06/John-Krasinski.jpg?w=640" alt="">
+        <p>John Krasinski, the star of Jack Ryan, shares his excitement about spy dramas making a comeback and teases the gripping final season.</p>
+    </div></div>
+
+    <div class="card" style="margin-top: 10px;">
+        <div class="card-body" style="color: #16161d;">
+            <a href="https://indianexpress.com/"><p style="text-decoration: underline;color:blue;">John Abraham, Sharvari to star in Vedaa </p></a>
+            <img src="https://images.indianexpress.com/2023/06/Vedaa-film-team.jpg?w=640" alt="">
+            <p>Actors John Abraham and Sharvari are set to team up for director Nikkhil Advani’s upcoming film “Vedaa”. Starring Sharvari in the title role, the movie will be “a thrilling experience filled with high-octane sequences and gripping action”, said the makers.
+            </p>
+        </div></div>
+        <div class="card" style="margin-top: 10px;">
+            <div class="card-body" style="color: #16161d;">
+                <a href="https://www.devdiscourse.com/"><p style="text-decoration: underline;color:blue;">Entertainment News Roundup: 'Netflix Effect' lifts Korean content but market control worries grow; Elated music fans pitch up for Glastonbury, await Elton John and more </p></a>
+                <img src="https://www.devdiscourse.com/remote.axd?https://devdiscourse.blob.core.windows.net/devnews/11_01_2022_20_39_16_6679325.jpg?width=920&format=webp" alt="">
+                <p>When Netflix co-CEO Ted Sarandos visits South Korea this week he will find an entertainment industry that has achieved global fame through hits such as "Squid Game" and "The Glory", but also growing worries about the service's effects on the local market.</p>
+            </div></div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="./index.js">
+
+    
+        // add class navbarDark on navbar scroll
+    const header = document.querySelector('.navbar');
+    
+    window.onscroll = function() {
+    var top = window.scrollY;
+    if(top >=100) {
+        header.classList.add('navbarDark');
+    }
+    else {
+        header.classList.remove('navbarDark');
+    }
+    }
+    </script>
+    <script>
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+    }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    
+    </script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+ 
+</html>

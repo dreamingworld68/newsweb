@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsweb</title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!---css style-->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="Food.html">
+    <link rel="stylesheet" href="home1.html">
+    <link rel="stylesheet" href="contact.html">
+    <link rel="stylesheet" href="district-edition.html">
+    <link rel="stylesheet" href="Fishes.html">
+    <link rel="stylesheet" href="AP.html">
+    <link rel="stylesheet" href="Tel.html">
+    <link rel="stylesheet" href="National.html">
+    <link rel="stylesheet" href="Entertain.html">
+    <link rel="stylesheet" href="Top stories.html">
+    <link rel="stylesheet" href="Movies.html">
+    <link rel="stylesheet" href="Business.html">
+    <!-- <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+	</script> -->
+  <!-- <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial;
+      font-size: 17px;
+    }
+    
+    .container {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .container img {vertical-align: middle;}
+    
+    .container .content {
+      position: absolute;
+      bottom: 0;
+      background: rgb(0, 0, 0); /* Fallback color */
+      background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+    }
+  </style> -->
+  </head>
+  <body>
+    <video width="100%" controls style="margin-top: -240px;">
+      <source src="https://assets.mixkit.co/video-templates/preview/mixkit-news-lower-third-814-large.mp4">
+      <source src="https://assets.mixkit.co/video-templates/preview/mixkit-news-lower-third-814-large.mp4">
+      Your browser does not support HTML video.
+    </video>
+    
+    <p>
+  
+    <a href="https://www.bigbuckbunny.org/" target="_blank"></a>.
+    </p>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="  padding: 3px 10px 1px;">Sroll to Up&#8593;</button>
+    <!-- <div class="mode">
+      Dark mode:			
+      <span class="change">OFF</span>
+    </div> -->
+    <header style="margin-top: -40px;">
+      <img src="https://raw.githubusercontent.com/IsAmitprajapati/DynamicCodingwithAmit/News-web-application/logo.png" width="120px" />
+      <!-- <div class="inputSearch desktop">
+
+        <form id="searchForm">
+
+          <input type="text" placeholder="Type to search..." id="searchInput" />
+          <span> <i class="fa-solid fa-search"></i></span>
+        </form>  
+      </div> -->
+    
+      <nav class="desktop">
+        <ul>
+          <li onclick="Search('Home')"><a href="Home.html" style="text-decoration:none;">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Top stories.html" style="text-decoration:none;">Top stories</a>
+        </li>
+          <!-- <li onclick="Search('Top Stories')">Top Stories</li> -->
+          <li class="nav-item">
+            <a class="nav-link active" href="district-edition.html" style="text-decoration:none;">District Edition</a>
+        </li>
+          <!-- <li onclick="Search('District Edition')">District Edition</li> -->
+          <li class="nav-item">
+            <a class="nav-link active" href="IPL.html" style="text-decoration:none;">IPL 2023</a>
+        </li>
+          <!-- <li onclick="Search('ipl2023')">IPL 2023</li> -->
+          <li class="nav-item">
+            <a class="nav-link active" href="Tech.html" style="text-decoration:none;">Tech</a>
+        </li>
+          <!-- <li onclick="Search('tech')">Tech</li> -->
+          <li class="nav-item">
+            <a class="nav-link active" href="food.html" style="text-decoration:none;">Food</a>
+        </li>
+          <!-- <li onclick="Search('food')">Food</li> -->
+          <li class="nav-item">
+            <a class="nav-link active" href="Movies.html" style="text-decoration:none;">Movies</a>
+        </li>
+          <!-- <li onclick="Search('movies')">Movies</li> -->
+          <li class="nav-item">
+            <a class="nav-link active" href="Business.html" style="text-decoration:none;">Business</a>
+        </li>
+          <!-- <li onclick="Search('business')">Business</li> -->
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html" style="text-decoration:none;">Contact Us</a>
+        </li>
+          <!-- <li onclick="Search('business')">Contact Us</li> -->
+
+        </ul>
+      </nav>
+
+      <div class="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!------>
+      <div class="mobile">
+        <nav>
+          <ul>
+            <li onclick="Search('Home')">Home</li>
+          <li onclick="Search('Top Stories')">Top Stories</li>
+          <li onclick="Search('District Edition')">District Edition</li>
+            <li onclick="Search('ipl2023')">IPL 2023</li>
+            <li onclick="Search('tech')">Tech</li>
+            <li onclick="Search('food')">Food</li>
+            <li onclick="Search('movies')">Movies</li>
+            <li onclick="Search('business')">Business</li>
+            <li onclick="Search('business')">Contact Us</li>
+
+          </ul>
+        </nav>
+        <div class="inputSearch">
+        <form id="searchFormMobile" id="searchInputMobile">
+          <input type="text" placeholder="Type to search..." />
+          <span> <i class="fa-solid fa-search"></i></span>
+        </div>
+        </form>
+      </div>
+    </header>
+
+    <!-- main  -->
+
+    <!-- <div class="container">
+      <img src="https://www.w3schools.com/w3images/notebook.jpg" alt="Notebook" style="width:100%;">
+      <div class="content">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+      </div>
+    </div> -->
+    <main>
+
+      <div class="card" style="width: 18rem;margin-left:-30px;">
+        <img src="https://th-i.thgim.com/public/incoming/ojmrqf/article66997894.ece/alternates/LANDSCAPE_1200/PTI06_22_2023_000223A.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="www.google.com"><button type="button" class="btn btn-outline-primary">India Today</a></a>
+        </li> -->
+        <!-- <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="www.google.com">
+          google
+        </a> -->
+
+
+          <p class="card-text">The U.S. and India will announce a series of agreements in defence cooperation, critical and emerging technology, health, environment and visas on June 22 in their joint statement as Prime Minister Narendra Modi and U.S. President Joe Biden hold bilateral talks during the Prime Minister’s state visit to the U.S.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://img.collegedekhocdn.com/media/img/news/School_Assembly_News_Headlines_for_5_January_2023_1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">The morning assembly provides a platform for school administrators, teachers, and student leaders to communicate important information and updates to the entire student body.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://files.prokerala.com/news/photos/imgs/800x500/athens-july-7-2019-xinhua-greek-conservative-new-democracy-nd-party-1590809.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">World news or international news or even foreign coverage is the news media jargon for news from abroad, about a country or a global subject. For journalism, it is a branch that deals with news either sent by foreign correspondents.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_600x450/public/images/shows/tech_news_today/hero/tnt_megan_jason.jpg?h=6be30068&itok=txzNe1A-" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">From communication and transport to healthcare and connectivity, technology has enhanced our lives for the better. The best part is that it is ever-evolving by facilitating more advanced features.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin-right:966px;max-height: 362px;">
+        <img src="https://www.v3cars.com/media/model-imgs/1673945304-altroz-cng.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">In this May 2023 detailed car sales analysis article, we’ll look at the YoY and MoM change in sales...</p>
+        </div>
+      </div>
+      <!-- <div class="card" style="width: 18rem;margin-right:-387px;margin-top:-387px;overflow:hidden;max-height: 362px;">
+        <img src="https://www.swindontownfc.co.uk/contentassets/8b424876ec19418d9e8703183f7facc3/new.jpg/Medium" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Modern football originated in Britain in the 19th century. Though “folk football” had been played since medieval times with varying rules, the game began to be standardized when it was taken up as a winter game at public schools.</p>
+        </div>
+      </div> -->
+      <div class="card" style="width: 18rem;margin-top:-387px;overflow:hidden;max-height: 362px;max-height: 362px;
+      margin-left: -104px;">
+        <img src="https://s01.sgp1.cdn.digitaloceanspaces.com/article/150116-xuuipxgdts-1615570234.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">‘Covid-19 situation has gone from bad to worse, virus still very active,’ says health ministry: India’s infections have exceeded 60,000.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin-top:-387px;overflow:hidden;max-height: 362px;">
+        <img src="https://www.surfertoday.com/images/stories/lorenzo-casati.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">From jet-pack flying to walking on water, Richard Browning, also known as the "real-life Iron Man," and pro kitesurfer, Jeremie Tronet, are no strangers to pushing the limits of what's possible.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;margin-right:-387px;margin-top:-387px;max-height:362px;overflow:hidden;">
+        <img src="https://www.swindontownfc.co.uk/contentassets/8b424876ec19418d9e8703183f7facc3/new.jpg/Medium" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Modern football originated in Britain in the 19th century. Though “folk football” had been played since medieval times with varying rules, the game began to be standardized when it was taken up as a winter game at public schools.</p>
+        </div>
+      </div>
+    </main>
+    <main>
+        <!-- <div class="card" style="width: 18rem;margin-right:966px;max-height:390px;">
+          <img src="https://d2r2ijn7njrktv.cloudfront.net/apnlive/uploads/2023/01/31185406/New-Project-6-1-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Visakhapatnam is the third largest city on East Coast beside Kolkata and Chennai with 682 square kilometres. It is also known as the Jewel of the East Coast.</p>
+          </div>
+        </div> -->
+        <!-- <div class="card" style="width: 18rem;margin-top:-415px;overflow:hidden;max-height:388px;margin-right: -20px;
+margin-left: 635px;">
+          <img src="https://img.etimg.com/thumb/width-420,height-315,imgsize-27944,resizemode-75,msid-98977237/news/international/us/city-killer-asteroid-to-pass-by-earth-check-date.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">According to NASA, the asteroid's close approach this weekend provides astronomers with a valuable opportunity to enhance their understanding of asteroids.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;margin-top:-415px;overflow:hidden;max-height:388px;margin-right:-970px">
+          <img src="https://qph.cf2.quoracdn.net/main-qimg-46c6305c8bfbe0c712b21a195d32df81-lq" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Its the important place of british colonization. When mohammed Ali was chased by French he did hide in Trichy Rockfort and British came to his help and rescued him.</p>
+          </div>
+        </div>  -->
+        <!-- <div class="card" style="width: 18rem;margin-top:-415px;overflow:hidden;max-height:388px; margin-right:612px;">
+          <img src="https://pkttours.com/UploadedFiles/Blog_Detail_131977795187758000.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">With the blossom of spring, comes the eruption of colors across the world with Holi! Holi knows no boundaries and it’s a celebration partaken in across the world. </p>
+          </div>
+        </div></main> -->
+        <!-- <div class="card" style="width: 18rem;margin-left:-415px;">
+          <img src="https://media.timeout.com/images/105327385/750/422/image.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">If you're into dining out as much as we are, we've got just the thing: a weekly roundup of the top food and drink news from around the globe – the delicious stories.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;margin-left: -931px;max-height:388px">
+          <img src="https://d6fiz9tmzg8gn.cloudfront.net/wp-content/uploads/2019/02/15tech-Banner.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">In this age of modern technology, where gadgets and digital apps get created by the day, change is the only constant. In order to keep up with the latest.</p>
+          </div>
+        </div> -->
+    </main>
+    <main style="margin-top: -63px;margin-right: 27px;">
+        <div class="card" style="width: 18rem;">
+          <img src="https://content.tupaki.com//twdata/2023/0223/news/Interesting-Releases-This-Weekend--1676376589-1490.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">The box office has been a bit dull in the past few weeks. There are going to be some notable releases this weekend to bring some energy into the theatre business once again.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://cdn.zeebiz.com/sites/default/files/styles/zeebiz_850x478/public/2020/08/09/126397-500.jpg?itok=ELBNpnte" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">The survey by Scripbox, a digital wealth management service provider, was conducted in July among more than 1,400 adult Indians to assess their financial preparedness to achieve freedom from financial worries.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://allthatsinteresting.com/wordpress/wp-content/themes/ati-2018/assets/images/interesting-science-articles.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">All That’s Interesting’s science articles keep you in step with the latest science news, no matter how quickly the latest developments come.Between new discoveries, pioneering breakthroughs, and revolutionary technologies, our modern world moves at a blistering speed. </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://static.toiimg.com/thumb/msid-96131622,width-1280,resizemode-4/96131622.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">World famous batsman Virat Kohli from India.At that time he could not win a single trophy for his team and now critics think that Virat Kohli should be removed from the captaincy of the team so that someone else can get a chance to show his essence as captain. </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.inventiva.co.in/wp-content/uploads/2022/01/healthcare_technology_medical_data_by_metamorworks_gettyimages-1127069581_2400x1600-100837041-large.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">The health-tech industry refers to the use of technology that is developed with a single aim to improve the different parts of the healthcare system. </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXtI4cMnbgraZh3C2tSix7o9K2jMN8kXxTmw&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">At Ambit, we spend a lot of time reading articles that cover a wide gamut of topics, ranging from zeitgeist to futuristic, and encapsulate them in our weekly ‘Ten Interesting Things’ product.</p>
+          </div>
+        </div>
+       
+        <div class="card" style="width: 18rem;margin-right:966px;max-height:390px;margin-top: -437px;margin-left: 26px;">
+          <img src="https://d2r2ijn7njrktv.cloudfront.net/apnlive/uploads/2023/01/31185406/New-Project-6-1-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Visakhapatnam is the third largest city on East Coast beside Kolkata and Chennai with 682 square kilometres. It is also known as the Jewel of the East Coast.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;margin-top:-415px;overflow:hidden;max-height:388px;margin-right: -240px;
+        margin-left: 698px;
+        margin-top: -462px;">
+          <img src="https://pkttours.com/UploadedFiles/Blog_Detail_131977795187758000.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">With the blossom of spring, comes the eruption of colors across the world with Holi! Holi knows no boundaries and it’s a celebration partaken in across the world. </p>
+          </div>
+        </div>
+    </main>
+<main>
+  <div class="card" style="width: 18rem;margin-left: -968px;
+  margin-top: -38px;max-height:560px;">
+    <img src="https://india.postsen.com/content/uploads/2023/06/23/fd81deb587.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">
+        Did the 5 people in the submarine die before they ran out of oxygen? Know the reason – Marathi News | Titan Submarine Accident all 5 people died before oxygen ended see what expert says about real reasonDid the 5 people in the submarine die before they ran out of oxygen? Know the reason – Marathi News | Titan Submarine Accident all 5 people died before oxygen ended see what expert says about real reason
+        Titan Submarine: Four days have passed since the disappearance of the submarine that carried the Titanic, and nothing has been reported about it. Gradually, the hopes of the lives of the people trapped in the submarine in the deep sea started to fade.</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;margin-right: -316px;
+  margin-top: -38px;max-height:px;">
+    <img src="https://static.toiimg.com/thumb/msid-101220528,height-566,width-737,imgsize-47066/101220528.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">
+        Bollywood celebrities trending on social media to all those oh-so-glamorous photoshoots and exciting film announcements, this is your one stop destination for all things related to Bollywood news. </p>
+    </div>
+  </div></main>
+  <main style="margin-right: -287px;
+  margin-top: -445px;">
+  <div class="card" style="width: 18rem;margin-top:-152px;">
+    <img src="https://www.eastcoastdaily.in/wp-content/uploads/2022/12/nora-fatehi-indian-flg.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Bollywood actor and dancer Nora Fatehi on Tuesday set the stage on fire as she performed at the FIFA fan festival in Doha. Nora grooved on several hit Bollywood tracks on the stage such as ‘Saki Saki’ and ‘Manike’ which were loved by all the fans and during her performance, the ‘Street Dancer 3D’ actor waved the Indian flag and screamed ‘Jai Hind’.</p>
+    </div>
+  </div>
+</main>
+<main style="  margin-right: -915px;
+margin-top: -602px;">
+  <div class="card" style="width: 18rem;">
+    <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1661344475.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Fitness has become a priority for most of us – but how do we get time to work out, when the little ones don't leave us, even for a second?</p>
+    </div>
+  </div>
+</main>
+<div class="footer" style="margin-top: 170px;">
+  <div class="box">
+      <div class="left">
+          <div class="categories">
+              <p style="color: antiquewhite;">Categories</p>
+              <div>
+                  <p>Home</p>
+              </div>
+              <div>
+                  <p>Top Stories</p>
+              </div>
+              <div>
+                  <p>District Edition</p>
+              </div>
+              <div>
+                <p>IPL 2023</p>
+            </div>
+            <div>
+              <p>Food</p>
+          </div>
+          <div>
+            <p>Tech</p>
+        </div>
+        <div>
+          <p>Movies</p>
+      </div>
+      <div>
+        <p>Business</p>
+    </div>
+          </div>
+          <div class="contactUs">
+              <div class="contact">
+                  <p style="color: antiquewhite;">Contact Us</p>
+                  <div>Phone No. - <span>*********</span></div>
+                  <div>Email - <span>abc@gmail.com</span></div>
+                  <div>Address - <span>*****, India</span></div>
+              </div>
+              <!-- <div class="icon">
+                <a href="https://www.facebook.com/" target="_blank">  <i class="fa-brands fa-square-facebook"></i>
+                  <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i>
+                      <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                      <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                      <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+              </div> -->
+          </div>
+      </div>
+      <div class="right">
+          <div class="newsletter" style="color:aliceblue">  
+              <!-- <p>Subscribe to Our NewsWebTech</p> -->
+              <div class="email">
+                  <input type="email" placeholder="Enter Your Email Here">
+                  <!-- <button>Subscribe</button> -->
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="copyrights" style="color:aliceblue">
+      Copyrights &copy; 2024 Coders World.
+  </div>
+</div>
+
+    <script src="script.js">
+    
+        // add class navbarDark on navbar scroll
+const header = document.querySelector('.navbar');
+
+window.onscroll = function() {
+    var top = window.scrollY;
+    if(top >=100) {
+        header.classList.add('navbarDark');
+    }
+    else {
+        header.classList.remove('navbarDark');
+    }
+}
+</script>
+<script>
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
+<!-- <script>
+  $( ".change" ).on("click", function() {
+    if( $( "body" ).hasClass( "dark" )) {
+      $( "body" ).removeClass( "dark" );
+      $( ".change" ).text( "OFF" );
+    } else {
+      $( "body" ).addClass( "dark" );
+      $( ".change" ).text( "ON" );
+    }
+  });
+</script>
+      
+       -->
+  
+
+  </body>
+</html>
